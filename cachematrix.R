@@ -5,6 +5,8 @@
 examplematrix<-matrix(c(1,2,1,1), nrow = 2, ncol = 2)
 
 # makecachematrix creates the object "inv_matrix", that will cache the inverse matrix
+# moreover it creates the matrix inv_condition that contains the matrix the inverse was
+# created from
 # if the caching was sucessful the function prints the message "inverse matrix 
 # stored in cache" and prints the cached matrix
 makecachematrix<-function(x=dummy_inv){
